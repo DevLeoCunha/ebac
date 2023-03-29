@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+h1 {
+    color: blueviolet;
+}
+
+h2 {
+    color: brown;
+}
+
+h2#economy { /*id especifico*/
+    color: gold;
+}
+
+.creation-date { /*classe*/
+    color: rgb(128, 128, 128);
+}
+
+* { /*geral*/
+    color: red;
+}
