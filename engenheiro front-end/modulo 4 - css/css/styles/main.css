@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+* { /*geral; reset*/
+    color: red;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
 h1 {
     color: blueviolet;
 }
@@ -16,6 +23,3 @@ h2#economy { /*id especifico*/
     color: rgb(128, 128, 128);
 }
 
-* { /*geral*/
-    color: red;
-}
