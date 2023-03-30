@@ -1,25 +1,26 @@
 @charset "UTF-8";
 
 * { /*geral; reset*/
-    color: red;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 
-h1 {
-    color: blueviolet;
+header li {
+    display: inline;
+    width: 0 auto;
 }
 
-h2 {
-    color: brown;
+.container {
+    width: 1366px;
+    margin: 0 auto; /* o quadrante da box, pode ser escrito 0 auto 0 auto */
 }
 
-h2#economy { /*id especifico*/
-    color: gold;
+.articles {
+    display: flex;
 }
 
-.creation-date { /*classe*/
-    color: rgb(128, 128, 128);
+.articles article img {
+    height: 180px;
 }
 
