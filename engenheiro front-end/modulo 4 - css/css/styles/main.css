@@ -6,9 +6,25 @@
     padding: 0px;
 }
 
+body > header { /*o filho direto de body é o header selecionado */
+    background-color: darkslategray;
+    padding: 16px 0;
+    color: white;
+}
+
+header .container {
+    display: flex; /*coloca lado a lado em colunas*/
+    align-items: center;
+    justify-content: space-between;
+}
+
 header li {
     display: inline;
     width: 0 auto;
+}
+
+header li a {
+    color: rgb(184, 207, 207);
 }
 
 .container {
@@ -18,8 +34,8 @@ header li {
 
 .articles {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap; /*transfere para outra linha caso ultrapasse a "margem"*/
+    justify-content: space-between; /*coloca um espaço entre os elementos */
 }
 
 .articles article img {
@@ -27,5 +43,26 @@ header li {
 }
 
 .articles article {
-    width: 30%;
+    width: 30%; 
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    display: inline-block;
 }
