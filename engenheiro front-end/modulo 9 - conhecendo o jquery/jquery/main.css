@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    background-color: purple;
+    padding: 16px 0;
+    color: white;
+    display: flex;
+    border-bottom: 16px solid rgb(77, 0, 77);
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+form {
+    background-color: gray;
+    padding: 24px 0;
+    text-align: center;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+#botao-cancelar {
+    background-color: red;
+}
