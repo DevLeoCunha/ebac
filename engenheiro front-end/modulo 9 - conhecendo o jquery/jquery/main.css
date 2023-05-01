@@ -32,7 +32,7 @@ input, button {
 }
 
 button {
-    background-color: green;
+    background-color: rgb(8, 177, 8);
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -41,7 +41,7 @@ button {
 }
 
 #botao-cancelar {
-    background-color: red;
+    background-color: rgb(219, 11, 11);
 }
 
 ul {
