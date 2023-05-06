@@ -18,5 +18,20 @@ header {
 }
 
 nav {
+    background-color: rgb(102, 132, 173);
+    color: white;
+}
 
+nav li {
+    margin-right: 16px;
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
 }
