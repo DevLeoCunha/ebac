@@ -14,7 +14,7 @@
 header {
     background-color: rgb(58, 75, 99);
     color: #fff;
-    padding: 16px 0;
+    padding-top: 16px;
 }
 
 nav {
@@ -34,4 +34,23 @@ nav li {
 nav li a {
     text-decoration: none;
     color: white;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.menu-hamburguer {
+    width: 32px;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    margin-bottom: 4px;
 }
