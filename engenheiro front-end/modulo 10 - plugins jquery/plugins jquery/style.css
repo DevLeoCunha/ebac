@@ -19,7 +19,7 @@ header {
 
 nav {
     background-color: rgb(102, 132, 173);
-    color: white;
+    padding: 16px 0;
 }
 
 nav li {
