@@ -24,6 +24,7 @@ header {
 nav { /*Usado para agrupar links externos*/
     background-color: rgb(102, 132, 173);
     padding: 16px 0;
+    display: none;
 }
 
 nav li {

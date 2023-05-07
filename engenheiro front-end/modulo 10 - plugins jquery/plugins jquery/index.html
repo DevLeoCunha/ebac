@@ -45,8 +45,11 @@
         $(document).ready(function() {
             $('#carrosel-imagens').slick({
                 autoplay: true,
-            });
+            }); /*coloca as imagens para passar auto*/
         })
+        $('.menu-hamburguer').click(function() {
+            $('nav').slideToggle();
+        }) /*permite esconder e mostrar o menu*/
     </script>
 </body>
 </html>
