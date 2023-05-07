@@ -15,10 +15,16 @@ html {
     margin: 0 auto;
 }
 
-header {
+header, footer {
     background-color: rgb(58, 75, 99);
     color: #fff;
     padding-top: 16px;
+}
+
+header { /* Para o menu header acompanhar mesmo rolando a pagina */
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 nav { /*Usado para agrupar links externos*/
@@ -41,10 +47,11 @@ nav li a {
     color: white;
 }
 
-header > .container { /*edita o espaço interno, menu hamburguer e dev motors*/
+header > .container,
+footer .container { /*edita o espaço interno, menu hamburguer e dev motors*/
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 16px;
+    padding-bottom: 15px;
 }
 
 .menu-hamburguer { /*o tamanho do elemento hamburguer*/
@@ -99,7 +106,7 @@ section h2 {
     margin: 0 5%;
 }
 
-.lista-veiculos li button {
+button {
     display: block;
     width: 100%;
     padding: 8px 0;
@@ -121,3 +128,37 @@ section h2 {
 .price del {
     color: brown;
 }
+
+.form-campo {
+    margin-bottom: 18px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+form {
+    max-width: 550px;
+}
+
+form button {
+    width: 290px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+footer li img {
+    height: 36px;
+}
+
