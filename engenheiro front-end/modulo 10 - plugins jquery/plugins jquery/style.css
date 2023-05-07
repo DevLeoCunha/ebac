@@ -42,7 +42,6 @@ nav li a {
 }
 
 header > .container { /*edita o espaço interno, menu hamburguer e dev motors*/
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
@@ -50,6 +49,7 @@ header > .container { /*edita o espaço interno, menu hamburguer e dev motors*/
 
 .menu-hamburguer { /*o tamanho do elemento hamburguer*/
     width: 32px;
+    cursor: pointer;
 }
 
 .menu-hamburguer span {
@@ -58,4 +58,61 @@ header > .container { /*edita o espaço interno, menu hamburguer e dev motors*/
     background-color: white;
     display: block;
     margin-bottom: 5px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    width: 400px;
+    margin-right: 30px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-veiculos {
+    flex-wrap: wrap;
+}
+
+.lista-veiculos li{
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-veiculos li img {
+    max-width: 100%;
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+.lista-veiculos li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: darkgreen;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.lista-veiculos li strong {
+    margin: 16px 0;
+    display: block;
 }
