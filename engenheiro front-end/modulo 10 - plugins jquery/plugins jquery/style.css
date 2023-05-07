@@ -21,10 +21,11 @@ header, footer {
     padding-top: 16px;
 }
 
-header { /* Para o menu header acompanhar mesmo rolando a pagina */
-    position: sticky;
+header { 
+    position: sticky; /* Para o menu header acompanhar mesmo rolando a pagina */
     top: 0;
     left: 0;
+    z-index: 1; /*para o header continuar sendo exibido e nao ocultado quando a rolagem passa pela carrousel, ou seja prioridade é do menu e não do carrousel*/
 }
 
 nav { /*Usado para agrupar links externos*/
