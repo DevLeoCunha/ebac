@@ -1,8 +1,12 @@
 * {
-   margin: 0;
-   padding: 0; 
-   box-sizing: border-box;
-   font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden; /*Esconde os items que ultrapassam o eixo horizontal da página.*/
 }
 
 .container {
@@ -17,7 +21,7 @@ header {
     padding-top: 16px;
 }
 
-nav {
+nav { /*Usado para agrupar links externos*/
     background-color: rgb(102, 132, 173);
     padding: 16px 0;
 }
@@ -28,7 +32,7 @@ nav li {
     display: inline;
     font-weight: bold;
     font-size: 18px;
-    text-transform: uppercase;
+    text-transform: uppercase; /*maiusculo*/
 }
 
 nav li a {
@@ -36,21 +40,21 @@ nav li a {
     color: white;
 }
 
-header > .container {
+header > .container { /*edita o espaço interno, menu hamburguer e dev motors*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
 }
 
-.menu-hamburguer {
+.menu-hamburguer { /*o tamanho do elemento hamburguer*/
     width: 32px;
 }
 
 .menu-hamburguer span {
-    height: 2px;
+    height: 4px;
     width: 100%;
     background-color: white;
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
