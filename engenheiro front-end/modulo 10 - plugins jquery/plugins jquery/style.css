@@ -60,7 +60,7 @@ footer .container { /*edita o espaço interno, menu hamburguer e dev motors*/
     cursor: pointer;
 }
 
-.menu-hamburguer span {
+.menu-hamburguer span { /* o span que cria as barrinhas do menu hamburguer*/
     height: 4px;
     width: 100%;
     background-color: white;
