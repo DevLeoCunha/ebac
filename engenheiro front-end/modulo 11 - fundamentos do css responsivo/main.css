@@ -18,5 +18,25 @@ header .container {
 }
 
 header {
-    padding: ;
+    padding: 16px 0 0;
+    border-bottom: 1px solid white;
+    margin-bottom: 56px;
+}
+
+.submenu {
+    display: none;
+    border: 1px solid red;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    width: 300px;
+    top: 100%;
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
 }
