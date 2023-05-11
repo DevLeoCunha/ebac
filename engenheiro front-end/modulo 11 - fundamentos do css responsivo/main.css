@@ -3,6 +3,7 @@
     padding: 0px;
     margin: 0px;
     font-family: arial, sans-serif;
+    background-color: rgb(250, 235, 220);
 }
 
 .container {
@@ -19,7 +20,7 @@ header .container {
 
 header {
     padding: 16px 0 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(139, 136, 136);
     margin-bottom: 56px;
 }
 
@@ -41,6 +42,10 @@ header {
     position: relative;
 }
 
+input {
+    background-color: white;
+}
+
 .clear {
     clear:both
 }
@@ -56,6 +61,7 @@ header {
 .submenu li {
     display: block;
     padding: 8px;
+    background-color: white;
 }
 
 .conteudo {
