@@ -38,6 +38,10 @@ header {
   max-width: 480px;
   margin-top: 40px;
 }
+.form-container form label {
+  font-weight: bold;
+  cursor: pointer;
+}
 .form-container form input {
   padding: 8px;
   display: block;
@@ -45,11 +49,17 @@ header {
   margin-bottom: 16px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid #e15f41;
 }
 .form-container form button {
   padding: 8px;
   display: block;
   width: 100%;
   margin-bottom: 16px;
+  background-color: #e15f41;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
