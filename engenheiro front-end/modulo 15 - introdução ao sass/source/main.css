@@ -30,7 +30,7 @@ header {
   justify-content: center;
 }
 .form-container h2 {
-  font-size: 42px;
+  font-size: 48px;
   text-align: center;
 }
 .form-container form {
@@ -62,4 +62,10 @@ header {
   border: none;
   cursor: pointer;
   color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 80%;
+  }
 }/*# sourceMappingURL=main.css.map */

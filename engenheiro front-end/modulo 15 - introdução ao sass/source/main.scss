@@ -1,11 +1,16 @@
 @use 'config/reset';
 @use 'config/variaveis';
+@use 'sass:math';
 
 @mixin elementoForm() {
     padding: 8px;
     display: block;
     width: 100%;
     margin-bottom: 16px;
+}
+
+@function pixelParaEm($alvoEmPixel, $contextoEmPixel: 16px) {
+    @return math.div($alvoEmPixel / $contextoEmPixel)+em;
 }
 
 body {
@@ -33,7 +38,7 @@ header {
     justify-content: center;
 
     h2 {
-        font-size: 42px;
+        font-size: pixelParaEm(42px);
         text-align: center;
     }
 
@@ -63,6 +68,16 @@ header {
             border: none;
             cursor: pointer;
             color: white;
+
+            &:hover {
+                background-color: darken(variaveis.$corPrincipal, 50%);
+            }
         }
+    }
+}
+
+@media screen and (max-width: variaveis.$mobile){
+    .container {
+        max-width: 80%;
     }
 }
