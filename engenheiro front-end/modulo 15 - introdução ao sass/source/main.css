@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: Pacifico, cursive, sans-serif;
 }
 
 body {
@@ -30,7 +30,7 @@ header {
   justify-content: center;
 }
 .form-container h2 {
-  font-size: 48px;
+  font-size: 42px;
   text-align: center;
 }
 .form-container form {
@@ -62,6 +62,9 @@ header {
   border: none;
   cursor: pointer;
   color: white;
+}
+.form-container form button:hover {
+  background-color: #b83a1d;
 }
 
 @media screen and (max-width: 767px) {

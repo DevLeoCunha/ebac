@@ -38,7 +38,7 @@ header {
     justify-content: center;
 
     h2 {
-        font-size: pixelParaEm(42px);
+        font-size: 42px;
         text-align: center;
     }
 
@@ -70,7 +70,7 @@ header {
             color: white;
 
             &:hover {
-                background-color: darken(variaveis.$corPrincipal, 50%);
+                background-color: darken(variaveis.$corPrincipal, 15%);
             }
         }
     }
