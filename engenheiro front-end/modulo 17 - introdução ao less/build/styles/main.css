@@ -11,6 +11,9 @@ body {
   background-color: #192a56;
   color: white;
 }
+li {
+  list-style: none;
+}
 .container {
   max-width: 968px;
   width: 100%;
@@ -48,4 +51,21 @@ header .profile-avatar {
 .profile-bio-description {
   font-size: 14px;
   opacity: 0.7;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+}
+.social-links img {
+  transition: all ease 0.3s;
+}
+.social-links img:hover {
+  transform: scale(1.1);
+}
+.projects-list-item a {
+  text-decoration: none;
+  background-color: #0097e6;
 }

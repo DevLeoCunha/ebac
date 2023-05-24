@@ -1,4 +1,6 @@
 @import "variaveis.less";
+@import "mapas.less";
+
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min width:768px) and (max-width: 1023px)"; //escapings
 
@@ -14,8 +16,12 @@
 }
 
 body {
-    background-color: @corDeFundo;
-    color: @corDosTextos;
+    background-color: #colors[backgroundColor];
+    color: #colors[textColor];
+}
+
+li {
+    list-style: none;
 }
 
 .container {
@@ -58,5 +64,29 @@ header {
     &-description {
         font-size: 14px;
         opacity: .7;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+
+        img {
+            transition: all ease .3s;
+            &:hover {
+                transform: scale(1.1); //110% aumenta o icone quando o cursor é posto em cima.
+            }
+        }
+    }
+
+.projects-list {
+    &-item {
+        a {
+            text-decoration: none;
+            background-color: #colors[buttonColor];
+        }
     }
 }
