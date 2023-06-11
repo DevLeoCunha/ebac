@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Especificidade: CSS inline, Ids e Classes e Tags. */
+        button { /*0 0 1*/
+            background-color: blue !important;
+        }
+
+        .btn-sucesso { /* 0 1 0 */
+            background-color: green;
+        }
+
+        /* 010 > 001, logo a class. btn-sucesso será priorizada em relação ao button */
+    </style>
+</head>
+<body>
+    <button class="btn-sucesso" style="background-color: red;">Enviar mensagem</button> 
+</body>
+</html>
