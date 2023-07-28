@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Tarefas</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+
+    <!-- Formulário para adicionar tarefas -->
+    <form id="formularioTarefa">
+        <label for="nomeTarefa">Nome da Tarefa:</label>
+        <input type="text" id="nomeTarefa" required>
+        <button type="submit">Cadastrar Tarefa</button>
+    </form>
+
+    <!-- Lista de tarefas -->
+    <ul id="listaTarefas">
+        <!-- Aqui as tarefas serão adicionadas dinamicamente -->
+    </ul>
+
+    <script>
+        // Função para adicionar a tarefa na lista
+        function adicionarTarefa() {
+            const nomeTarefa = $("#nomeTarefa").val();
+            if (!nomeTarefa) return;
+
+            const novaTarefa = $("<li></li>").text(nomeTarefa);
+            novaTarefa.on("click", function() {
+                $(this).toggleClass("completada");
+            });
+
+            $("#listaTarefas").append(novaTarefa);
+            $("#nomeTarefa").val("");
+        }
+
+        // Ao enviar o formulário, chama a função para adicionar a tarefa
+        $("#formularioTarefa").on("submit", function(event) {
+            event.preventDefault();
+            adicionarTarefa();
+        });
+    </script>
+
+    <style>
+        .completada {
+            text-decoration: line-through;
+        }
+    </style>
+</body>
+</html>
