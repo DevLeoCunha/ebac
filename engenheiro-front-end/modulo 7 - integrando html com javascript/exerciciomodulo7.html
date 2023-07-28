@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validação de Formulário</title>
+</head>
+<body>
+    <h1>Validação de Formulário</h1>
+    <form id="formulario">
+        <label for="campoA">Campo A:</label>
+        <input type="number" id="campoA" name="campoA" required>
+        <br>
+        <label for="campoB">Campo B:</label>
+        <input type="number" id="campoB" name="campoB" required>
+        <br>
+        <button type="button" onclick="validarFormulario()">Submeter</button>
+    </form>
+    <p id="mensagem"></p>
+
+    <script>
+        function validarFormulario() {
+            const campoA = parseFloat(document.getElementById("campoA").value);
+            const campoB = parseFloat(document.getElementById("campoB").value);
+            const mensagemElemento = document.getElementById("mensagem");
+
+            if (isNaN(campoA) || isNaN(campoB)) {
+                mensagemElemento.textContent = "Por favor, preencha ambos os campos com valores numéricos.";
+            } else if (campoB > campoA) {
+                mensagemElemento.textContent = "Formulário válido! O número B é maior que o número A.";
+            } else {
+                mensagemElemento.textContent = "Formulário inválido! O número B deve ser maior que o número A.";
+            }
+        }
+    </script>
+</body>
+</html>
