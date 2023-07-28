@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agenda de Contatos</title>
+</head>
+<body>
+    <h1>Agenda de Contatos</h1>
+
+    <!-- Formulário para adicionar contatos -->
+    <form id="formularioContato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" required>
+        <button type="button" onclick="adicionarContato()">Cadastrar</button>
+    </form>
+
+    <!-- Tabela para exibir os contatos -->
+    <table id="tabelaContatos">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aqui os contatos serão adicionados dinamicamente -->
+        </tbody>
+    </table>
+
+    <script>
+        function adicionarContato() {
+            const nome = document.getElementById("nome").value;
+            const telefone = document.getElementById("telefone").value;
+
+            if (!nome || !telefone) {
+                alert("Por favor, preencha todos os campos!");
+                return;
+            }
+
+            const tabelaContatos = document.getElementById("tabelaContatos").getElementsByTagName('tbody')[0];
+
+            const novaLinha = tabelaContatos.insertRow();
+            const colunaNome = novaLinha.insertCell(0);
+            const colunaTelefone = novaLinha.insertCell(1);
+
+            colunaNome.textContent = nome;
+            colunaTelefone.textContent = telefone;
+
+            document.getElementById("formularioContato").reset();
+        }
+    </script>
+</body>
+</html>
