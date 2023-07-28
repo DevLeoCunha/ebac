@@ -117,6 +117,14 @@ section h2 {
     background-color: cornflowerblue;
 }
 
+#entretenimento .articles article a {
+    background-color: rgb(255, 0, 0);
+    color: black;
+}
 
+#tecnologia .articles article a {
+    background-color: rgb(160, 216, 226);
+    color: black;
+}
 
 
